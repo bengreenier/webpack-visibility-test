@@ -6,7 +6,7 @@ This repo provides an example of how one might choose to create a webpack librar
 
 This repository is structured into two sub-projects:
 
-- `producer` - exposes the produced library and it's typed
+- `producer` - exposes the produced library and it's types
 - `consumer` - consumes `producer` as a library
 
 ### Building producer
@@ -17,18 +17,18 @@ This repository is structured into two sub-projects:
 
 That's it! Webpack output should indicate a build was produced.
 In fact, you can inspect `dist` to be sure.
-Note that `dist` also contains the types (`.d.ts`) files for your library.
+Note that `dist` also contains the type (`.d.ts`) files for your library.
 
 ### Building consumer
 
-> Note: This sub-project uses a dev server so that the code changes can be tested an immediately applied to your browser.
+> Note: This sub-project uses a dev server so that the code changes can be tested and immediately applied to your browser.
 
 - `cd consumer`
 - `npm i`
 - `npm run dev`
 
 This should open your browser to the URL shown in the Webpack output.
-This is handy for testing changes, which we be automatically re-transpiled and loaded on the fly.
+This is handy for testing changes, which will be automatically re-transpiled and loaded on the fly.
 
 Open the browser DevTools, and look at the output under the `Console` tab. You should see:
 
